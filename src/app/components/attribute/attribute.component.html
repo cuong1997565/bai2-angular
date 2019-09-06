@@ -1,0 +1,30 @@
+<!-- <h3
+[class.pd-10] = "true"
+[class.cl-red] = "true"
+[class.border-blue] = "true"
+>
+Chao mung den voi khoa hoc lap trinh angular 5
+</h3> -->
+<!--ngClass-->
+<!-- <h3
+[ngClass]="['pd-10','cl-red','border-blue']"
+>Chao mung den voi khoa hoc lap trinh angular 5
+</h3> -->
+<h3
+[ngStyle] = "{
+  'border' : 'solid 2px blue',
+  'padding.px' : '10',
+  'color' : 'red'
+}"
+>Chao mung den voi khoa hoc lap trinh angular 4
+</h3>
+
+<h3
+[ngClass]="setClasses()"
+>
+Chao mung den voi khoa hoc lap trinh angular 4
+</h3>
+
+<button type="button" class="btn btn-danger" (click)="toggleSpecial()">
+  Toggle Button
+</button>

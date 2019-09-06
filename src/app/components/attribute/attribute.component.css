@@ -1,0 +1,21 @@
+.pd-10
+{
+  padding: 10px;
+}
+
+.cl-red
+{
+  color: red;
+}
+
+.border-blue
+{
+  border: solid 1px blue;
+}
+
+
+.border-yellow
+{
+  border: 5px solid yellow;
+  padding: 5px;
+}
