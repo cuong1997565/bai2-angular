@@ -23,8 +23,8 @@ export class FilterPipe implements PipeTransform {
       if(status)
       {
        return products.filter(x => {
-            return parseInt(x.status.toString().toLowerCase().indexOf(status.toLowerCase))
-        });
+          return x.status.toString().toLowerCase().indexOf(status.toLowerCase()) != -1;
+      });
       }
     }
     return products;

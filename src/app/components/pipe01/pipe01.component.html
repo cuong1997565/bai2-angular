@@ -1,0 +1,47 @@
+<div class="container"  [style.margin-top.px] = "30">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <table class="table table-bordered table-hover">
+        <thead>
+          <tr>
+            <th>Dau vao</th>
+            <th>Dau ra</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <button
+              type="button" class="btn btn-danger"
+              [style.margin-right.px] = "10"
+              (click) = "onHandleSort(1)" >
+                  Tang
+              </button>
+
+              <button
+              type="button" class="btn btn-primary"
+              (click) = "onHandleSort(-1)">
+                  Giam
+              </button>
+              <p> Sort Value : {{ sortValue }} </p>
+              <p> {{ arrNumber }} </p>
+            </td>
+            <td> {{ arrNumber | sortNumber :sortValue }} </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+              type="text"
+              class="form-control"
+              [(ngModel)]="name"
+              >
+            </td>
+            <td> {{ name | capitalize }} </td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+
+  </div>
+</div>

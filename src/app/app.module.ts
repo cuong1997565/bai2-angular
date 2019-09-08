@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-
 import { AppComponent } from './app.component';
 import { NgForComponent } from './components/ng-for/ng-for.component';
 import { AttributeComponent } from './components/attribute/attribute.component';
@@ -11,6 +10,11 @@ import { PipeComponent } from './components/pipe/pipe.component';
 import { CustomPipeOneComponent } from './components/custom-pipe-one/custom-pipe-one.component';
 import { FormatDataPipe } from './pipe/format-data.pipe';
 import { FilterPipe } from './pipe/filter.pipe';
+import { Pipe01Component } from './components/pipe01/pipe01.component';
+import { SortNumberPipe } from './pipe/sort-number.pipe';
+import { CapitalizePipe } from './pipe/capitalize.pipe';
+import { Pipe02Component } from './components/pipe02/pipe02.component';
+import { SortPipe } from './pipe/sort.pipe';
 
 @NgModule({
   declarations: [
@@ -22,7 +26,12 @@ import { FilterPipe } from './pipe/filter.pipe';
     PipeComponent,
     CustomPipeOneComponent,
     FormatDataPipe,
-    FilterPipe
+    FilterPipe,
+    Pipe01Component,
+    SortNumberPipe,
+    CapitalizePipe,
+    Pipe02Component,
+    SortPipe,
   ],
   imports: [
     BrowserModule,
