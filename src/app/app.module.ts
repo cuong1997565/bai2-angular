@@ -15,6 +15,11 @@ import { SortNumberPipe } from './pipe/sort-number.pipe';
 import { CapitalizePipe } from './pipe/capitalize.pipe';
 import { Pipe02Component } from './components/pipe02/pipe02.component';
 import { SortPipe } from './pipe/sort.pipe';
+import { LodashComponent } from './components/lodash/lodash.component';
+import { TemplateReferenceVariablesComponent } from './components/template-reference-variables/template-reference-variables.component';
+import { LifecycleHookComponent } from './components/lifecycle-hook/lifecycle-hook.component';
+import { OtherLifecycleComponent } from './components/other-lifecycle/other-lifecycle.component';
+import { LifecycleHook2Component } from './components/lifecycle-hook2/lifecycle-hook2.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +37,11 @@ import { SortPipe } from './pipe/sort.pipe';
     CapitalizePipe,
     Pipe02Component,
     SortPipe,
+    LodashComponent,
+    TemplateReferenceVariablesComponent,
+    LifecycleHookComponent,
+    OtherLifecycleComponent,
+    LifecycleHook2Component,
   ],
   imports: [
     BrowserModule,

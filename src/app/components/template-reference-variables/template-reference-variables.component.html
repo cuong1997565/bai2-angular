@@ -1,0 +1,33 @@
+<div class="container" [style.margin-top.px]="30">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Template Ref</h3>
+          </div>
+          <div class="panel-body">
+            <input
+            type="text" class="form-control"
+            #txtName
+            >
+            <button type="button"
+            class="btn btn-danger"
+            (click) = "onGetData(txtName.value)"
+            [style.margin-top.px] = "15"
+            [style.margin-right.px] = "15">Lay du lieu</button>
+
+            <button
+            type="button"
+            class="btn btn-success"
+            (click) = "onGetDataComp()"
+            [style.margin-top.px] = "15">
+              Lay Du Lieu
+            </button>
+          </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
